@@ -1,0 +1,3 @@
+/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles/LearnOpenGL.dir
+/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles/edit_cache.dir
+/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles/rebuild_cache.dir
