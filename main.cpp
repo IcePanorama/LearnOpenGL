@@ -93,15 +93,28 @@ int main()
     glDeleteShader(fragmentShader);
 
     // set up vertex data & buffer(s) and config vertex attribs
+    //float vertices[] = {
+    //    -0.5f, -0.5f, 0.0f,
+    //    0.5f, -0.5f, 0.0f,
+    //    0.0f, 0.5f, 0.0f
+    //};
+    
     float vertices[] = {
-        -0.5f, -0.5f, 0.0f,
-        0.5f, -0.5f, 0.0f,
-        0.0f, 0.5f, 0.0f
+        0.5f, 0.5f, 0.0f,   // top right
+        0.5f, -0.5f, 0.0f,  // bottom right
+        -0.5f, -0.5f, 0.0f, // bottom left
+        -0.5f, 0.5f, 0.0f   // top left
     };
 
-    unsigned int VBO, VAO; 
+    unsigned int indices[] = {
+        0, 1, 3,    // first tri
+        1, 2, 3     // second tri
+    };
+
+    unsigned int VBO, VAO, EBO; 
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
 
     glBindVertexArray(VAO);
     // Copy our vertices in a buffer for OpenGL to use
@@ -115,6 +128,9 @@ int main()
     // Set the vertex attributes pointer
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(VAO);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
     // uncomment for wireframe
     //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
@@ -128,7 +144,11 @@ int main()
     
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        //glDrawArrays(GL_TRIANGLES, 0, 3);
+        
+        //glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glBindVertexArray(0);
 
         glfwPollEvents();
         glfwSwapBuffers(window);
