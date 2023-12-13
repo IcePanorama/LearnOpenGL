@@ -70,6 +70,7 @@ CMakeFiles/LearnOpenGL.dir/src/glad.c.o: src/glad.c \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdint.h
 
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: src/main.cpp \
+  include/main.h \
   /usr/include/GLFW/glfw3.h \
   /usr/include/KHR/khrplatform.h \
   /usr/include/alloca.h \
@@ -297,8 +298,6 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: src/main.cpp \
 
 /usr/include/c++/13/ios:
 
-/usr/include/c++/13/initializer_list:
-
 /usr/include/c++/13/ext/type_traits.h:
 
 /usr/include/c++/13/x86_64-redhat-linux/bits/c++allocator.h:
@@ -335,6 +334,10 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: src/main.cpp \
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
+/usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/range_access.h:
+
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/stdint.h:
@@ -362,6 +365,10 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: src/main.cpp \
 /usr/include/stdlib.h:
 
 /usr/include/bits/types/time_t.h:
+
+/usr/include/c++/13/initializer_list:
+
+include/main.h:
 
 /usr/include/bits/types/struct_timespec.h:
 
@@ -652,7 +659,3 @@ src/main.cpp:
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
 /usr/include/c++/13/bits/new_allocator.h:
-
-/usr/include/c++/13/system_error:
-
-/usr/include/c++/13/bits/range_access.h:

@@ -72,6 +72,7 @@ CMakeFiles/LearnOpenGL.dir/src/glad.c.o
 
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /home/main/dev/OpenGL/LearnOpenGL/src/main.cpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/main.h
  /usr/include/GLFW/glfw3.h
  /usr/include/KHR/khrplatform.h
  /usr/include/alloca.h
