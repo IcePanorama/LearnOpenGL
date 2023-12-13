@@ -69,44 +69,44 @@ include CMakeFiles/LearnOpenGL.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/LearnOpenGL.dir/flags.make
 
-CMakeFiles/LearnOpenGL.dir/glad.c.o: CMakeFiles/LearnOpenGL.dir/flags.make
-CMakeFiles/LearnOpenGL.dir/glad.c.o: glad.c
-CMakeFiles/LearnOpenGL.dir/glad.c.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LearnOpenGL.dir/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/glad.c.o -MF CMakeFiles/LearnOpenGL.dir/glad.c.o.d -o CMakeFiles/LearnOpenGL.dir/glad.c.o -c /home/main/dev/OpenGL/LearnOpenGL/glad.c
+CMakeFiles/LearnOpenGL.dir/src/glad.c.o: CMakeFiles/LearnOpenGL.dir/flags.make
+CMakeFiles/LearnOpenGL.dir/src/glad.c.o: src/glad.c
+CMakeFiles/LearnOpenGL.dir/src/glad.c.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/LearnOpenGL.dir/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/src/glad.c.o -MF CMakeFiles/LearnOpenGL.dir/src/glad.c.o.d -o CMakeFiles/LearnOpenGL.dir/src/glad.c.o -c /home/main/dev/OpenGL/LearnOpenGL/src/glad.c
 
-CMakeFiles/LearnOpenGL.dir/glad.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LearnOpenGL.dir/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/main/dev/OpenGL/LearnOpenGL/glad.c > CMakeFiles/LearnOpenGL.dir/glad.c.i
+CMakeFiles/LearnOpenGL.dir/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/LearnOpenGL.dir/src/glad.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/main/dev/OpenGL/LearnOpenGL/src/glad.c > CMakeFiles/LearnOpenGL.dir/src/glad.c.i
 
-CMakeFiles/LearnOpenGL.dir/glad.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LearnOpenGL.dir/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/main/dev/OpenGL/LearnOpenGL/glad.c -o CMakeFiles/LearnOpenGL.dir/glad.c.s
+CMakeFiles/LearnOpenGL.dir/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/LearnOpenGL.dir/src/glad.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/main/dev/OpenGL/LearnOpenGL/src/glad.c -o CMakeFiles/LearnOpenGL.dir/src/glad.c.s
 
-CMakeFiles/LearnOpenGL.dir/main.cpp.o: CMakeFiles/LearnOpenGL.dir/flags.make
-CMakeFiles/LearnOpenGL.dir/main.cpp.o: main.cpp
-CMakeFiles/LearnOpenGL.dir/main.cpp.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LearnOpenGL.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/main.cpp.o -MF CMakeFiles/LearnOpenGL.dir/main.cpp.o.d -o CMakeFiles/LearnOpenGL.dir/main.cpp.o -c /home/main/dev/OpenGL/LearnOpenGL/main.cpp
+CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: CMakeFiles/LearnOpenGL.dir/flags.make
+CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: src/main.cpp
+CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: CMakeFiles/LearnOpenGL.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/LearnOpenGL.dir/src/main.cpp.o -MF CMakeFiles/LearnOpenGL.dir/src/main.cpp.o.d -o CMakeFiles/LearnOpenGL.dir/src/main.cpp.o -c /home/main/dev/OpenGL/LearnOpenGL/src/main.cpp
 
-CMakeFiles/LearnOpenGL.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LearnOpenGL.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/main/dev/OpenGL/LearnOpenGL/main.cpp > CMakeFiles/LearnOpenGL.dir/main.cpp.i
+CMakeFiles/LearnOpenGL.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/LearnOpenGL.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/main/dev/OpenGL/LearnOpenGL/src/main.cpp > CMakeFiles/LearnOpenGL.dir/src/main.cpp.i
 
-CMakeFiles/LearnOpenGL.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LearnOpenGL.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/main/dev/OpenGL/LearnOpenGL/main.cpp -o CMakeFiles/LearnOpenGL.dir/main.cpp.s
+CMakeFiles/LearnOpenGL.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/LearnOpenGL.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/main/dev/OpenGL/LearnOpenGL/src/main.cpp -o CMakeFiles/LearnOpenGL.dir/src/main.cpp.s
 
 # Object files for target LearnOpenGL
 LearnOpenGL_OBJECTS = \
-"CMakeFiles/LearnOpenGL.dir/glad.c.o" \
-"CMakeFiles/LearnOpenGL.dir/main.cpp.o"
+"CMakeFiles/LearnOpenGL.dir/src/glad.c.o" \
+"CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"
 
 # External object files for target LearnOpenGL
 LearnOpenGL_EXTERNAL_OBJECTS =
 
-LearnOpenGL: CMakeFiles/LearnOpenGL.dir/glad.c.o
-LearnOpenGL: CMakeFiles/LearnOpenGL.dir/main.cpp.o
+LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/glad.c.o
+LearnOpenGL: CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/build.make
 LearnOpenGL: CMakeFiles/LearnOpenGL.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable LearnOpenGL"

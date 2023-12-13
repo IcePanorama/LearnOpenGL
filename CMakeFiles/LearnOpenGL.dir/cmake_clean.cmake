@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LearnOpenGL.dir/glad.c.o"
-  "CMakeFiles/LearnOpenGL.dir/glad.c.o.d"
-  "CMakeFiles/LearnOpenGL.dir/main.cpp.o"
-  "CMakeFiles/LearnOpenGL.dir/main.cpp.o.d"
+  "CMakeFiles/LearnOpenGL.dir/src/glad.c.o"
+  "CMakeFiles/LearnOpenGL.dir/src/glad.c.o.d"
+  "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o"
+  "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o.d"
   "LearnOpenGL"
   "LearnOpenGL.pdb"
 )
