@@ -20,6 +20,13 @@ const char *fragmentShaderSource = "#version 330 core\n"
     "{\n"
     "FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
     "}\0";
+const char *yellowFragShaderSource = "#version 330 core\n"
+    "out vec4 FragColor;\n"
+    "void main()\n"
+    "{\n"
+    "FragColor = vec4(1.0f, 1.0f, 0.0f, 1.0f);\n"
+    "}\0";
+
 
 int main()
 {
@@ -74,12 +81,31 @@ int main()
             << std::endl;
     }
 
+    // YELLOW FRAGMENT SHADER STUFF
+    unsigned int yellowFragmentShader;
+    yellowFragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+    glShaderSource(yellowFragmentShader, 1, &yellowFragShaderSource, NULL);
+    glCompileShader(yellowFragmentShader);
+    // check for errs again
+    glGetShaderiv(yellowFragmentShader, GL_COMPILE_STATUS, &success);
+    if (!success)
+    {
+        glGetShaderInfoLog(yellowFragmentShader, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::YELLOW FRAGMENT::COMPILATION_FAILED\n" << infoLog 
+            << std::endl;
+    }
+
     // SHADER PROGRAM -- link shaders
-    unsigned int shaderProgram;
+    unsigned int shaderProgram, secondShaderProgram;
     shaderProgram = glCreateProgram();
+    secondShaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
+    glAttachShader(secondShaderProgram, vertexShader);
+    glAttachShader(secondShaderProgram, yellowFragmentShader);
     glLinkProgram(shaderProgram);
+    glLinkProgram(secondShaderProgram);
+
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
     if (!success)
     {
@@ -88,8 +114,17 @@ int main()
             << std::endl;
     }
 
+    glGetProgramiv(secondShaderProgram, GL_LINK_STATUS, &success);
+    if (!success)
+    {
+        glGetProgramInfoLog(secondShaderProgram, 512, NULL, infoLog);
+        std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog 
+            << std::endl;
+    }
+
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
+    glDeleteShader(yellowFragmentShader);
 
     // set up vertex data & buffer(s) and config vertex attribs
     float firstTriangle[] = {
@@ -139,6 +174,7 @@ int main()
         glBindVertexArray(VAOs[0]);
         glDrawArrays(GL_TRIANGLES, 0, 3);
         
+        glUseProgram(secondShaderProgram);
         glBindVertexArray(VAOs[1]);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
