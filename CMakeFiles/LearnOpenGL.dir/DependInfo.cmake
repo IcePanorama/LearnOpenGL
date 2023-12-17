@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/main/dev/OpenGL/LearnOpenGL/src/glad.c" "CMakeFiles/LearnOpenGL.dir/src/glad.c.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/glad.c.o.d"
   "/home/main/dev/OpenGL/LearnOpenGL/src/main.cpp" "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/main.cpp.o.d"
+  "/home/main/dev/OpenGL/LearnOpenGL/src/shader.cpp" "CMakeFiles/LearnOpenGL.dir/src/shader.cpp.o" "gcc" "CMakeFiles/LearnOpenGL.dir/src/shader.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

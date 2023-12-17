@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/LearnOpenGL.dir/src/glad.c.o CMakeFiles/LearnOpenGL.dir/src/main.cpp.o -o LearnOpenGL  -lGL -ldl -lglfw 
+/usr/bin/c++ CMakeFiles/LearnOpenGL.dir/src/glad.c.o CMakeFiles/LearnOpenGL.dir/src/main.cpp.o CMakeFiles/LearnOpenGL.dir/src/shader.cpp.o -o LearnOpenGL  -lGL -ldl -lglfw 

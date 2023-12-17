@@ -81,12 +81,12 @@ clean: CMakeFiles/LearnOpenGL.dir/clean
 CMakeFiles/LearnOpenGL.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LearnOpenGL.dir/build.make CMakeFiles/LearnOpenGL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles --progress-num=1,2,3 "Built target LearnOpenGL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/main/dev/OpenGL/LearnOpenGL/CMakeFiles --progress-num=1,2,3,4 "Built target LearnOpenGL"
 .PHONY : CMakeFiles/LearnOpenGL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LearnOpenGL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/main/dev/OpenGL/LearnOpenGL/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/main/dev/OpenGL/LearnOpenGL/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LearnOpenGL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/main/dev/OpenGL/LearnOpenGL/CMakeFiles 0
 .PHONY : CMakeFiles/LearnOpenGL.dir/rule
