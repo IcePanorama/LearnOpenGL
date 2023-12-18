@@ -41,10 +41,10 @@ int main()
 
     float vertices[] = {
         // positions        //colors            // Texture coords
-        0.5f, 0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   2.0f, 2.0f,     // top right
-        0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   2.0f, 0.0f,     // bottom right 
-       -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   0.0f, 0.0f,     // bottom left
-       -0.5f, 0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 2.0f      // bottom left
+        0.5f, 0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   0.55f, 0.55f,     // top right
+        0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   0.55f, 0.45f,     // bottom right 
+       -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   0.45f, 0.45f,     // bottom left
+       -0.5f, 0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.45f, 0.55f      // bottom left
     };
     unsigned int indices[] = {
         0, 1, 3,    // first tri
@@ -87,7 +87,8 @@ int main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
     loadTexture(texture1, "textures/container.jpg", false);
     
     configTexture(texture2);
@@ -147,7 +148,7 @@ void configTexture(unsigned int texture)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 }
 
 void loadTexture(unsigned int texture, const char* fileName, bool hasAlpha)
