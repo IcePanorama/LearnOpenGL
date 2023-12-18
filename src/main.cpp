@@ -41,10 +41,10 @@ int main()
 
     float vertices[] = {
         // positions        //colors            // Texture coords
-        0.5f, 0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   0.55f, 0.55f,     // top right
-        0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   0.55f, 0.45f,     // bottom right 
-       -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   0.45f, 0.45f,     // bottom left
-       -0.5f, 0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.45f, 0.55f      // bottom left
+        0.5f, 0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,     // top right
+        0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   1.0f, 0.0f,     // bottom right 
+       -0.5f, -0.5f, 0.0f,  0.0f, 0.0f, 1.0f,   0.0f, 0.0f,     // bottom left
+       -0.5f, 0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f      // bottom left
     };
     unsigned int indices[] = {
         0, 1, 3,    // first tri
@@ -81,14 +81,7 @@ int main()
 
     stbi_set_flip_vertically_on_load(true);
 
-    //configTexture(texture1);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    // set the texture wrapping/filtering options (on the currently bound texture object)
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-
+    configTexture(texture1);
     loadTexture(texture1, "textures/container.jpg", false);
     
     configTexture(texture2);
@@ -97,6 +90,7 @@ int main()
     ourShader.use();
     ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
+    float shaderMix = 0.0f;
 
     while (!glfwWindowShouldClose(window))
     {
@@ -112,6 +106,22 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture1);
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, texture2);
+
+        if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+        {
+            shaderMix += 0.001f;
+            if (shaderMix >= 1.0f)
+                shaderMix = 1.0f;
+        }
+        else if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+        {
+            shaderMix -= 0.001f;
+            if (shaderMix <= 0.0f)
+                shaderMix = 0.0f;
+        }
+
+
+        ourShader.setFloat("mix_value", shaderMix);
 
         // render container
         glBindVertexArray(VAO);
