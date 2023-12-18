@@ -75,7 +75,6 @@ int main()
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-    /* -- the whole process of generating a texture -- */
     unsigned int texture1, texture2;
     glGenTextures(1, &texture1);
     glGenTextures(2, &texture2);
@@ -110,7 +109,6 @@ int main()
         // render container
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        //glDrawArrays(GL_TRIANGLES, 0, 3);
 
         // Swap buffers and poll I/O events
         glfwSwapBuffers(window);
