@@ -77,11 +77,17 @@ int main()
 
     unsigned int texture1, texture2;
     glGenTextures(1, &texture1);
-    glGenTextures(2, &texture2);
+    glGenTextures(1, &texture2);
 
     stbi_set_flip_vertically_on_load(true);
 
-    configTexture(texture1);
+    //configTexture(texture1);
+    glBindTexture(GL_TEXTURE_2D, texture1);
+    // set the texture wrapping/filtering options (on the currently bound texture object)
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     loadTexture(texture1, "textures/container.jpg", false);
     
     configTexture(texture2);
@@ -142,7 +148,6 @@ void configTexture(unsigned int texture)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-
 }
 
 void loadTexture(unsigned int texture, const char* fileName, bool hasAlpha)
