@@ -138,5 +138,4 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: \
  /usr/include/c++/13/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/13/x86_64-redhat-linux/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc \
- /home/main/dev/OpenGL/LearnOpenGL/include/main.h
+ /usr/include/c++/13/bits/sstream.tcc

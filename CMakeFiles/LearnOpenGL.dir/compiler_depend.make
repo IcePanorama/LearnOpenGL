@@ -70,7 +70,6 @@ CMakeFiles/LearnOpenGL.dir/src/glad.c.o: src/glad.c \
   /usr/lib/gcc/x86_64-redhat-linux/13/include/stdint.h
 
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o: src/main.cpp \
-  include/main.h \
   include/shader.h \
   include/stb_image.h \
   /usr/include/GLFW/glfw3.h \
@@ -695,6 +694,8 @@ src/shader.cpp:
 
 /usr/include/c++/13/ios:
 
+/usr/include/c++/13/initializer_list:
+
 /usr/include/c++/13/ext/type_traits.h:
 
 /usr/include/c++/13/x86_64-redhat-linux/bits/c++allocator.h:
@@ -749,10 +750,6 @@ src/shader.cpp:
 
 /usr/include/c++/13/bits/postypes.h:
 
-/usr/include/c++/13/math.h:
-
-/usr/include/c++/13/bits/ostream_insert.h:
-
 /usr/include/bits/types/timer_t.h:
 
 /usr/include/linux/limits.h:
@@ -786,10 +783,6 @@ src/shader.cpp:
 /usr/include/c++/13/tr1/poly_hermite.tcc:
 
 /usr/include/bits/types/time_t.h:
-
-/usr/include/c++/13/initializer_list:
-
-include/main.h:
 
 /usr/include/bits/types/struct_timespec.h:
 
@@ -1040,6 +1033,10 @@ include/stb_image.h:
 /usr/include/sys/types.h:
 
 /usr/include/bits/wctype-wchar.h:
+
+/usr/include/c++/13/math.h:
+
+/usr/include/c++/13/bits/ostream_insert.h:
 
 /usr/include/bits/select.h:
 

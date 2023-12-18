@@ -72,7 +72,6 @@ CMakeFiles/LearnOpenGL.dir/src/glad.c.o
 
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /home/main/dev/OpenGL/LearnOpenGL/src/main.cpp
- /home/main/dev/OpenGL/LearnOpenGL/include/main.h
  /home/main/dev/OpenGL/LearnOpenGL/include/shader.h
  /home/main/dev/OpenGL/LearnOpenGL/include/stb_image.h
  /usr/include/GLFW/glfw3.h
