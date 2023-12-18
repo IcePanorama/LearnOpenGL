@@ -76,6 +76,8 @@ int main()
     glGenTextures(1, &texture1);
     glGenTextures(2, &texture2);
 
+    stbi_set_flip_vertically_on_load(true);
+
     glBindTexture(GL_TEXTURE_2D, texture1);
     // set the texture wrapping/filtering options (on the currently bound texture object)
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
