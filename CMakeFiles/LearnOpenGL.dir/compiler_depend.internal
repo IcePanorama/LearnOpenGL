@@ -72,6 +72,197 @@ CMakeFiles/LearnOpenGL.dir/src/glad.c.o
 
 CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /home/main/dev/OpenGL/LearnOpenGL/src/main.cpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat2x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat2x3.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat2x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat2x4.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat3x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat3x2.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat3x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat3x3.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat3x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat3x4.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat4x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat4x2.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat4x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat4x3.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat4x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat4x4.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double2x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double2x3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double2x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double2x4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double3x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double3x2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double3x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double3x3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double3x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double3x4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double4x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double4x2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double4x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double4x3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double4x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double4x4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float2x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float2x3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float2x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float2x4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float3x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float3x2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float3x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float3x3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float3x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float3x4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float4x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float4x2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float4x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float4x3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float4x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float4x4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/common.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_vector_relational.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/vector_relational.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/_fixes.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/_vectorize.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/compute_common.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_common.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_exponential.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec1.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec1.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/exponential.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_geometric.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/geometric.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_matrix.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat2x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat2x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat3x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat3x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat3x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat4x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat4x3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat4x4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/matrix.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/compute_vector_relational.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat2x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_mat2x2.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec2.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec3.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_vec4.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/scalar_int_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/scalar_uint_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double2x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_double2x2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float2x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_float2x2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float2_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float3_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float4_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int2_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int3_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int4_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint2_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint3_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint4.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint4_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/simd/platform.h
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/_fixes.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_integer.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_packing.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/func_trigonometric.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/qualifier.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_half.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_half.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/fwd.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/glm.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/scalar_constants.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/scalar_constants.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/constants.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/constants.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_clip_space.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_clip_space.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_projection.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_projection.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_transform.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/matrix_transform.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_relational.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_relational.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/setup.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_float.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_quat.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/detail/type_quat.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_geometric.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_geometric.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_common.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_common.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_double.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_double_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_float.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_float_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_transform.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_transform.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_trigonometric.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/quaternion_trigonometric.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool1.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_bool1_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double1.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_double1_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float1.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_float1_precision.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int1.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_int1_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_relational.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_relational.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint1.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/ext/vector_uint1_sized.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/epsilon.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/epsilon.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/quaternion.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/quaternion.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/vec1.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/matrix_transform.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/matrix_transform.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/type_ptr.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/gtc/type_ptr.inl
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/integer.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/mat2x2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/packing.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/trigonometric.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/vec2.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/vec3.hpp
+ /home/main/dev/OpenGL/LearnOpenGL/include/glm/vec4.hpp
  /home/main/dev/OpenGL/LearnOpenGL/include/shader.h
  /home/main/dev/OpenGL/LearnOpenGL/include/stb_image.h
  /usr/include/GLFW/glfw3.h
@@ -80,6 +271,7 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
  /usr/include/asm/errno.h
+ /usr/include/assert.h
  /usr/include/bits/atomic_wide_counter.h
  /usr/include/bits/byteswap.h
  /usr/include/bits/cpu-set.h
@@ -88,9 +280,21 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/bits/errno.h
  /usr/include/bits/floatn-common.h
  /usr/include/bits/floatn.h
+ /usr/include/bits/flt-eval-method.h
+ /usr/include/bits/fp-fast.h
+ /usr/include/bits/fp-logb.h
+ /usr/include/bits/iscanonical.h
  /usr/include/bits/libc-header-start.h
+ /usr/include/bits/libm-simd-decl-stubs.h
+ /usr/include/bits/local_lim.h
  /usr/include/bits/locale.h
  /usr/include/bits/long-double.h
+ /usr/include/bits/math-vector.h
+ /usr/include/bits/mathcalls-helper-functions.h
+ /usr/include/bits/mathcalls-narrow.h
+ /usr/include/bits/mathcalls.h
+ /usr/include/bits/posix1_lim.h
+ /usr/include/bits/posix2_lim.h
  /usr/include/bits/pthread_stack_min-dynamic.h
  /usr/include/bits/pthreadtypes-arch.h
  /usr/include/bits/pthreadtypes.h
@@ -135,11 +339,13 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/bits/types/wint_t.h
  /usr/include/bits/typesizes.h
  /usr/include/bits/uintn-identity.h
+ /usr/include/bits/uio_lim.h
  /usr/include/bits/waitflags.h
  /usr/include/bits/waitstatus.h
  /usr/include/bits/wchar.h
  /usr/include/bits/wctype-wchar.h
  /usr/include/bits/wordsize.h
+ /usr/include/bits/xopen_lim.h
  /usr/include/c++/13/backward/binders.h
  /usr/include/c++/13/bit
  /usr/include/c++/13/bits/alloc_traits.h
@@ -183,6 +389,7 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/c++/13/bits/range_access.h
  /usr/include/c++/13/bits/refwrap.h
  /usr/include/c++/13/bits/requires_hosted.h
+ /usr/include/c++/13/bits/specfun.h
  /usr/include/c++/13/bits/sstream.tcc
  /usr/include/c++/13/bits/std_abs.h
  /usr/include/c++/13/bits/stl_algobase.h
@@ -199,12 +406,18 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/c++/13/bits/uses_allocator.h
  /usr/include/c++/13/bits/uses_allocator_args.h
  /usr/include/c++/13/bits/utility.h
+ /usr/include/c++/13/cassert
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
+ /usr/include/c++/13/cfloat
+ /usr/include/c++/13/climits
  /usr/include/c++/13/clocale
+ /usr/include/c++/13/cmath
  /usr/include/c++/13/cstddef
+ /usr/include/c++/13/cstdint
  /usr/include/c++/13/cstdio
  /usr/include/c++/13/cstdlib
+ /usr/include/c++/13/cstring
  /usr/include/c++/13/cwchar
  /usr/include/c++/13/cwctype
  /usr/include/c++/13/debug/assertions.h
@@ -221,6 +434,7 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/c++/13/iosfwd
  /usr/include/c++/13/iostream
  /usr/include/c++/13/istream
+ /usr/include/c++/13/limits
  /usr/include/c++/13/new
  /usr/include/c++/13/ostream
  /usr/include/c++/13/pstl/pstl_config.h
@@ -231,6 +445,18 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/c++/13/string
  /usr/include/c++/13/string_view
  /usr/include/c++/13/system_error
+ /usr/include/c++/13/tr1/bessel_function.tcc
+ /usr/include/c++/13/tr1/beta_function.tcc
+ /usr/include/c++/13/tr1/ell_integral.tcc
+ /usr/include/c++/13/tr1/exp_integral.tcc
+ /usr/include/c++/13/tr1/gamma.tcc
+ /usr/include/c++/13/tr1/hypergeometric.tcc
+ /usr/include/c++/13/tr1/legendre_function.tcc
+ /usr/include/c++/13/tr1/modified_bessel_func.tcc
+ /usr/include/c++/13/tr1/poly_hermite.tcc
+ /usr/include/c++/13/tr1/poly_laguerre.tcc
+ /usr/include/c++/13/tr1/riemann_zeta.tcc
+ /usr/include/c++/13/tr1/special_function_util.h
  /usr/include/c++/13/tuple
  /usr/include/c++/13/type_traits
  /usr/include/c++/13/typeinfo
@@ -255,14 +481,19 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/glad/glad.h
  /usr/include/gnu/stubs-64.h
  /usr/include/gnu/stubs.h
+ /usr/include/limits.h
  /usr/include/linux/errno.h
+ /usr/include/linux/limits.h
  /usr/include/locale.h
+ /usr/include/math.h
  /usr/include/pthread.h
  /usr/include/sched.h
  /usr/include/stdc-predef.h
  /usr/include/stdint.h
  /usr/include/stdio.h
  /usr/include/stdlib.h
+ /usr/include/string.h
+ /usr/include/strings.h
  /usr/include/sys/cdefs.h
  /usr/include/sys/select.h
  /usr/include/sys/single_threaded.h
@@ -270,9 +501,12 @@ CMakeFiles/LearnOpenGL.dir/src/main.cpp.o
  /usr/include/time.h
  /usr/include/wchar.h
  /usr/include/wctype.h
+ /usr/lib/gcc/x86_64-redhat-linux/13/include/float.h
+ /usr/lib/gcc/x86_64-redhat-linux/13/include/limits.h
  /usr/lib/gcc/x86_64-redhat-linux/13/include/stdarg.h
  /usr/lib/gcc/x86_64-redhat-linux/13/include/stddef.h
  /usr/lib/gcc/x86_64-redhat-linux/13/include/stdint.h
+ /usr/lib/gcc/x86_64-redhat-linux/13/include/syslimits.h
 
 CMakeFiles/LearnOpenGL.dir/src/shader.cpp.o
  /home/main/dev/OpenGL/LearnOpenGL/src/shader.cpp
