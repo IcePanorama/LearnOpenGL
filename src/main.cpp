@@ -18,11 +18,13 @@ const unsigned int SCR_HEIGHT = 600;
 
 int main()
 {
+    /* init/ config */
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
+    /* Draw window */
     GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
@@ -33,14 +35,17 @@ int main()
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
+    /* Load all OpenGL function pointers */
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
         std::cout << "Failed to initialize GLAD.\n";
         return -1;
     }
 
+    /* build and compile our shader program */
     Shader ourShader("src/shader.vs", "src/shader.fs");
 
+    /* Setting up vertex data/buffer(s) and configing vertex attribs */
     float vertices[] = {
         // positions        //colors            // Texture coords
         0.5f, 0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,     // top right
@@ -77,6 +82,7 @@ int main()
     glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
+    /* load and create textures */
     unsigned int texture1, texture2;
     glGenTextures(1, &texture1);
     glGenTextures(1, &texture2);
@@ -100,12 +106,6 @@ int main()
         // Input
         processInput(window);
 
-        glm::mat4 trans = glm::mat4(1.0);
-        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f,
-              1.0f));
-        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
-        unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
 
         // render
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -116,6 +116,14 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture1);
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, texture2);
+        
+        // First crate
+        glm::mat4 trans = glm::mat4(1.0);
+        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f,
+              1.0f));
+        unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
 
         if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
         {
@@ -130,11 +138,21 @@ int main()
                 shaderMix = 0.0f;
         }
 
-
         ourShader.setFloat("mix_value", shaderMix);
 
         // render container
         glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
+        // Second crate
+        trans = glm::mat4(1.0);
+        trans = glm::translate(trans, glm::vec3(-0.5f, 0.5f, 0.0f));
+        float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+        trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+        // this time take the matrix value array's first element as its memory 
+        // pointer
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
+
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // Swap buffers and poll I/O events
