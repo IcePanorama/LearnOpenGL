@@ -141,7 +141,12 @@ int main()
     ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
 
+    glm::mat4 projection = glm::mat4(1.0f);
     float fov = 45.0f;
+    projection = glm::perspective(glm::radians(fov),
+                                  (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 
+                                  100.0f);
+    ourShader.setMat4("projection", projection);
 
     while (!glfwWindowShouldClose(window))
     {
@@ -162,23 +167,14 @@ int main()
         ourShader.use();
 
         glm::mat4 view = glm::mat4(1.0f);
-        glm::mat4 projection = glm::mat4(1.0f);
 
         view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-        projection = glm::perspective(glm::radians(fov),
-                                      (float)SCR_WIDTH / (float)SCR_HEIGHT,
-                                      0.1f, 100.0f);
 
         // retrieve the matrix uniform locs
         int viewLoc = glGetUniformLocation(ourShader.ID, "view");
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
 
-        int projectionLoc = glGetUniformLocation(ourShader.ID, "projection");
-        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE,
-                            glm::value_ptr(projection));
-        //TODO: try creating outShader.setMat4() then move this outside of loop
         //ourShader.setMat4("projection", projection);
-        
 
         // render container
         glBindVertexArray(VAO);
@@ -188,9 +184,7 @@ int main()
           model = glm::translate(model, cubePositions[i]);
           float angle = 20.0f * i;
           model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-          int modelLoc = glGetUniformLocation(ourShader.ID, "model");
-          glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-
+          ourShader.setMat4("model", model);
           glDrawArrays(GL_TRIANGLES, 0, 36);
         }
 
