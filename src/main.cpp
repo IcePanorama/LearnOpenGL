@@ -43,7 +43,7 @@ int main()
     }
 
     /* config global opengl state */
-    //glEnable(GL_DEPTH_TEST);
+    glEnable(GL_DEPTH_TEST);
 
     /* build and compile our shader program */
     Shader ourShader("src/shader.vs", "src/shader.fs");
@@ -92,15 +92,10 @@ int main()
       -0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
       -0.5f,  0.5f, -0.5f,  0.0f, 1.0f
     };
-    /*unsigned int indices[] = {
-        0, 1, 3,    // first tri
-        1, 2, 3,    // second tri
-    };*/
 
     unsigned int VBO, VAO; //, EBO; 
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
-    //glGenBuffers(1, &EBO);
 
     glBindVertexArray(VAO);
 
@@ -108,15 +103,10 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    //glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    //glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
     // position attribute 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
-    // color attribute
-    //glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
-    //glEnableVertexAttribArray(1);
+
     // texture attribute
     glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
@@ -146,7 +136,7 @@ int main()
 
         // render
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // bind texture
         glActiveTexture(GL_TEXTURE0);
@@ -177,7 +167,7 @@ int main()
         int projectionLoc = glGetUniformLocation(ourShader.ID, "projection");
         glUniformMatrix4fv(projectionLoc, 1, GL_FALSE,
                             glm::value_ptr(projection));
-        //TODO: try creating outShader.setMat4()
+        //TODO: try creating outShader.setMat4() then move this outside of loop
         //ourShader.setMat4("projection", projection);
         
 
