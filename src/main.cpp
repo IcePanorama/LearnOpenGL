@@ -141,6 +141,8 @@ int main()
     ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
 
+    float fov = 45.0f;
+
     while (!glfwWindowShouldClose(window))
     {
         // Input
@@ -159,21 +161,16 @@ int main()
         //activate shader
         ourShader.use();
 
-        //glm::mat4 model = glm::mat4(1.0f);
         glm::mat4 view = glm::mat4(1.0f);
         glm::mat4 projection = glm::mat4(1.0f);
 
-        //model = glm::rotate(model, (float)glfwGetTime(),
-                            //glm::vec3(0.5f, 1.0f, 0.0f));
         view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-        projection = glm::perspective(glm::radians(45.0f),
+        projection = glm::perspective(glm::radians(fov),
                                       (float)SCR_WIDTH / (float)SCR_HEIGHT,
                                       0.1f, 100.0f);
 
         // retrieve the matrix uniform locs
-        //int modelLoc = glGetUniformLocation(ourShader.ID, "model");
         int viewLoc = glGetUniformLocation(ourShader.ID, "view");
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
         glUniformMatrix4fv(viewLoc, 1, GL_FALSE, &view[0][0]);
 
         int projectionLoc = glGetUniformLocation(ourShader.ID, "projection");
