@@ -95,17 +95,34 @@ int main()
     configTexture(texture2);
     loadTexture(texture2, "textures/awesomeface.png", true);
 
+    /* Going 3D */
+    /* model matrix */
+    glm::mat4 model = glm::mat4(1.0f);
+    model = glm::rotate(model, glm::radians(-55.0f),
+                        glm::vec3(1.0f, 0.0f, 0.0f));
+
+    /* view matrix */
+    glm::mat4 view = glm::mat4(1.0f);
+    // note that we're translating the scene in the reverse dir of where we 
+    // want to move
+    view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+
+    /* proj matrix */
+    glm::mat4 projection;
+    projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f,
+                                  100.0f);
+
     ourShader.use();
     ourShader.setInt("texture1", 0);
     ourShader.setInt("texture2", 1);
-    float shaderMix = 0.0f;
+    //float shaderMix = 0.5f;
+    ourShader.setFloat("mix_value", 0.5f);
 
 
     while (!glfwWindowShouldClose(window))
     {
         // Input
         processInput(window);
-
 
         // render
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -116,43 +133,21 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture1);
         glActiveTexture(GL_TEXTURE1);
         glBindTexture(GL_TEXTURE_2D, texture2);
+
+        /* send matrices to the shader */
+        // model
+        int modelLoc = glGetUniformLocation(ourShader.ID, "model");
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        // view
+        int viewLoc = glGetUniformLocation(ourShader.ID, "view");
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+        // proj
+        int projectionLoc = glGetUniformLocation(ourShader.ID, "projection");
+        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE,
+                            glm::value_ptr(projection));
         
-        // First crate
-        glm::mat4 trans = glm::mat4(1.0);
-        trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
-        trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f,
-              1.0f));
-        unsigned int transformLoc = glGetUniformLocation(ourShader.ID, "transform");
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
-
-        if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
-        {
-            shaderMix += 0.001f;
-            if (shaderMix >= 1.0f)
-                shaderMix = 1.0f;
-        }
-        else if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
-        {
-            shaderMix -= 0.001f;
-            if (shaderMix <= 0.0f)
-                shaderMix = 0.0f;
-        }
-
-        ourShader.setFloat("mix_value", shaderMix);
-
         // render container
         glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
-        // Second crate
-        trans = glm::mat4(1.0);
-        trans = glm::translate(trans, glm::vec3(-0.5f, 0.5f, 0.0f));
-        float scaleAmount = static_cast<float>(sin(glfwGetTime()));
-        trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
-        // this time take the matrix value array's first element as its memory 
-        // pointer
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
-
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
         // Swap buffers and poll I/O events
